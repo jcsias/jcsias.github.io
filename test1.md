@@ -13,4 +13,7 @@ Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology f
 
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/ba1369f2-87cd-4a5b-b554-c651eb9d2a62)
 
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3cb535f1-c3d9-4e50-9286-789bada3b791)
+
+
 
