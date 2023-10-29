@@ -2,7 +2,9 @@
 **Hello World** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 good search terms: 
 "machine learning streamflow recession forecast"
+
 "machine learning hydrologic signatures"
+
 
 
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/cfa47a92-79b0-4454-9a9f-4bbf4640a9b7)
@@ -10,7 +12,8 @@ good search terms:
 source of above: Wu, Shuyue, et al. "Regional patterns and physical controls of streamflow generation across the conterminous United States." Water Resources Research 57.6 (2021): e2020WR028086.
 
 google search term "machine learning hydrologic signatures"
-Botterill, Tom E., and Hilary K. McMillan. "Using Machine Learning to Identify Hydrologic Signatures With an Encoder–Decoder Framework." Water Resources Research 59.3 (2023): e2022WR033091.  
+Botterill, Tom E., and Hilary K. McMillan. "Using Machine Learning to Identify Hydrologic Signatures With an Encoder–Decoder Framework." Water Resources Research 59.3 (2023): e2022WR033091.  https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022WR033091
+
 they used camels database...add alpha, (median) beta non-linear recession parameters to their classical signatures. They had the machine figure out its own hydrologic signatures (if foudn 16).  ammong the "classic signatures" the alpha and beta parameters were among those most strongly correlated to ML learned parameters. The ML identified the 16 factors by training on streamflow (the model target was hydrologic time series emulation).  Their results underscore the importance of alpha beta as string flow signatures. The experimental design shows these parameters are relevant for accurate simulation of streamflow . The Addor CAMELS does not include alpha
 My idea: I pick camels gages where I can get a good fix on aplpha beta, I train a machine on streamflow for two different parameter scenarios: each one using features (camels parameters + RecessionParameters), but differeing in source of RP. One of the sources will be mine, another could be exponential, and a third maybe Botteril and McMillan's parameters?
 
@@ -26,6 +29,14 @@ cb 30
 
 Istalkar, Prashant, Akshay Kadu, and Basudev Biswal. "Value of process understanding in the era of machine learning: A case for recession flow prediction." Journal of Hydrology (2023): 130350.
 
+Prieto, C., Vine, N. L., Kavetski, D., García, E., & Medina, R. (2019). Flow prediction in ungauged catchments using probabilistic random forests regionalization and new statistical adequacy tests. Water Resources Research, 55(5), 4364–4392. https://doi.org/10.1029/2018WR023254
+Note 1: Basically, the ML-Bayesien parameter inference procedure did NOT work out. Two steps to go from watershed xteristics to inferred model parameters:  1) fit RF model to predict flow index PC for prognostic watershed. *2) Then use the trained Bayesism scheme to infer the hydrosimmodle parameter.  Then run to the model on the prognostic watershed. 3) estimate the hydro params for the prognostic watershed with a conventional approach. (4)  Compare the model performed based on the source of parameters (ML-Bayesian vs conventional).  They got pretty good results on the RF testing data (i.e., did good job estimating the "true" flow index PCS on the testing watersheds, but when these used to estimate simulation model parameters, GOT POOR hydrograph simulation RESULTS using the inferred hydrosim parameters!! 
+
+Note 3:  how would conventionally calibrated model on a training gage do against the model using parameters estimated by the ML-Scheme? This should jdefine the upper level of how well we could hope to on the testing data. This is the calibration assessment.  If the calibration assessment is highly unfavorable for the ML-B pareters, then expect to have no better and probably worse results in the validation (the results with the test data).
+
+Note 2: cited by Botter et al: "Signatures can be used to calibrate hydrologic models in ungauged basins, by regionalizing the signatures (estimating signature values based on watershed attributes) and then calibrating the model against the regionalized signatures (Prieto et al., 2019)"
+
+ABSTRACT:  This study attacks the prediction in ungauged catchment problem by ... First, [formed] orthogonal set of “flow index PCs.” These  are regionalized using random forests regression [I wonder what they used as their feature variables?] and  used to condition hydrological model parameters using a Bayesian scheme. Second, “adequacy” tests are proposed to evaluate a priori the hydrological and regionalization model performance in the space of flow index PCs. The proposed regionalization approach is applied to 92 northern Spain catchments, with 16 catchments treated as ungauged. It is shown that (1) a small number of PCs capture approximately 87% of variability in the flow indices and (2) adequacy tests with respect to regionalized information are indicative of (but do not guarantee) the ability of a hydrological model to predict flow time series and are hence proposed as a prerequisite for flow prediction in ungauged catchments. The adequacy tests identify the regionalization of flow index PCs as adequate in 12 of 16 catchments but **the hydrological model as adequate in only 1 of 16 catchments.** Hence, a focus on improving hydrological model structure and input data (the effects of which are not disaggregated in this work) is recommended.
 
 Tyralis, Hristos, et al. "Explanation and probabilistic prediction of hydrological signatures with statistical boosting algorithms." Remote Sensing 13.3 (2021): 333. 
 
