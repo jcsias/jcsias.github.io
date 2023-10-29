@@ -9,4 +9,6 @@ cites Gnann et al 2021
 Gnann, Sebastian J., et al. "TOSSH: A toolbox for streamflow signatures in hydrology." Environmental Modelling & Software 138 (2021): 104983.
 cb 30
 
+Villaescusa-Navarro, Francisco, et al. "The CAMELS project: public data release." The Astrophysical Journal Supplement Series 265.2 (2023): 54.
+
 
