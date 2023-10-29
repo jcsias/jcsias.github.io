@@ -1,4 +1,12 @@
-name test1.md
+
 **Hello World** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+
+google search term "machine learning hydrologic signatures"
+Botterill, Tom E., and Hilary K. McMillan. "Using Machine Learning to Identify Hydrologic Signatures With an Encoder–Decoder Framework." Water Resources Research 59.3 (2023): e2022WR033091.
+cb 1
+cites Gnann et al 2021
+
+Gnann, Sebastian J., et al. "TOSSH: A toolbox for streamflow signatures in hydrology." Environmental Modelling & Software 138 (2021): 104983.
+cb 30
 
 
