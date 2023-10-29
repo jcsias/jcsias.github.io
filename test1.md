@@ -14,12 +14,14 @@ Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology f
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/fdb941e4-31b9-46fa-aabc-b200e06697d8)
 
 
-![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3756df7d-a116-4176-92d0-7bc3a77ad9fc)
-
-
-![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/ba1369f2-87cd-4a5b-b554-c651eb9d2a62)
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/817d7f02-c768-4267-bc5e-0b442b5a0400)
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/4ab24bdf-cd20-4759-ae60-24e67fa88777)
 
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3cb535f1-c3d9-4e50-9286-789bada3b791)
 
+hydrologic signatures
 
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/c6df94f9-8d60-4587-ba08-6cf4d1d65af4)
+
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/793582b0-35c2-4fb1-b81d-c3573cdbca44)
 
