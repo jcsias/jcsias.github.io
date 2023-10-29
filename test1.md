@@ -1,6 +1,8 @@
 
 **Hello World** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
-good search terms: machine learning streamflow recession forecast
+good search terms: 
+"machine learning streamflow recession forecast"
+"machine learning hydrologic signatures"
 
 
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/cfa47a92-79b0-4454-9a9f-4bbf4640a9b7)
@@ -23,6 +25,14 @@ Istalkar, Prashant, Akshay Kadu, and Basudev Biswal. "Value of process understan
 
 
 Tyralis, Hristos, et al. "Explanation and probabilistic prediction of hydrological signatures with statistical boosting algorithms." Remote Sensing 13.3 (2021): 333. 
+
+Singh, Shailesh Kumar, and George A. Griffiths. "Prediction of streamflow recession curves in gauged and ungauged basins." Water Resources Research 57.11 (2021): e2021WR030618.  " Both Euclidean Distance and Random Forest methods were employed to determine degree of similarity between a reference basin and an ungauged site. Results are shown in Table 5 which shows a much superior performance as assessed by MAE and RMSE for the Random Forest method."
+
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3232d841-4ac5-4d77-9430-a2d7d26737a0)
+
+Figure above from the Sing et al paper.  Maybe I can train RF to estimate recession parameters for a handful of CAMELS gages; I can train a model on different "truth" data, each truth being z different researcher's estimates of  b-values  Then the distance between RF model and Truth I expect will be smallest if trained on my b-value than when trained on someone else's.  So basically I run a contest that I also enter.
+
+Štravs, L., & Brilly, M. (2007). Development of a low-flow forecasting model using the M5 machine learning method. Hydrological sciences journal, 52(3), 466-477.
 
 Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology for large-sample studies." Hydrology and Earth System Sciences 21.10 (2017): 5293-5313. cb>400  https://hess.copernicus.org/articles/21/5293/2017/hess-21-5293-2017.pdf
 
@@ -51,4 +61,5 @@ hydrologic signatures
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/793582b0-35c2-4fb1-b81d-c3573cdbca44)
 
 
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/73019226-77ad-4989-8366-5b0ca733dc62)
 
