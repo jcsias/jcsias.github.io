@@ -11,6 +11,12 @@ cb 30
 
 Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology for large-sample studies." Hydrology and Earth System Sciences 21.10 (2017): 5293-5313. cb>400  https://hess.copernicus.org/articles/21/5293/2017/hess-21-5293-2017.pdf
 
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/fdb941e4-31b9-46fa-aabc-b200e06697d8)
+
+
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3756df7d-a116-4176-92d0-7bc3a77ad9fc)
+
+
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/ba1369f2-87cd-4a5b-b554-c651eb9d2a62)
 
 ![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/3cb535f1-c3d9-4e50-9286-789bada3b791)
