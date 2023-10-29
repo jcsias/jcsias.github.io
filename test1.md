@@ -11,11 +11,30 @@ good search terms:
 
 source of above: Wu, Shuyue, et al. "Regional patterns and physical controls of streamflow generation across the conterminous United States." Water Resources Research 57.6 (2021): e2020WR028086.
 
-google search term "machine learning hydrologic signatures"
+
 Botterill, Tom E., and Hilary K. McMillan. "Using Machine Learning to Identify Hydrologic Signatures With an Encoder–Decoder Framework." Water Resources Research 59.3 (2023): e2022WR033091.  https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022WR033091
 
-they used camels database...add alpha, (median) beta non-linear recession parameters to their classical signatures. They had the machine figure out its own hydrologic signatures (if foudn 16).  ammong the "classic signatures" the alpha and beta parameters were among those most strongly correlated to ML learned parameters. The ML identified the 16 factors by training on streamflow (the model target was hydrologic time series emulation).  Their results underscore the importance of alpha beta as string flow signatures. The experimental design shows these parameters are relevant for accurate simulation of streamflow . The Addor CAMELS does not include alpha
-My idea: I pick camels gages where I can get a good fix on aplpha beta, I train a machine on streamflow for two different parameter scenarios: each one using features (camels parameters + RecessionParameters), but differeing in source of RP. One of the sources will be mine, another could be exponential, and a third maybe Botteril and McMillan's parameters?
+link for TOSSH:  https://github.com/TOSSHtoolbox/TOSSH
+
+list of parameters that they added to the CAMELS set: 
+
+gauge_id	EventRR	RR_seasonality	Recession_a_seasonality	AverageStorage	
+RecessionParametersAlpha	RecessionParametersBeta	RecessionParametersT0	BaseflowRecessionK	FirstRecessionSlope
+MidRecessionSlope	EventRR_TotalRR_Ratio	VariabilityIndex
+
+link for their github website and their recession parameters: https://github.com/mcmillanhk/HydroML/blob/master/data/extra_sigs/gw_array.csv
+
+see screen shot below of part of the table of auxiliary parameters...
+
+Notes:  they used camels database...add alpha, (median) beta non-linear recession parameters to their classical signatures. They had the machine figure out its own hydrologic signatures (it found 16).  ammong the "classic signatures" the alpha and beta parameters were among those most strongly correlated to ML learned parameters. The ML identified the 16 factors by training on streamflow (the model target was hydrologic time series emulation).  Because of the experimental design, their results show indirectly the importance of alpha, beta recession parameters to hydrologic simulation success. The ML simulation model work about as well as calibrated conceptual models.  these parameters are relevant for accurate simulation of streamflow. The Addor CAMELS does not include alpha.
+My idea: I pick camels gages where I can get a good fix on alpha beta, I train a machine on streamflow for two different parameter scenarios: each one using features (camels parameters + RecessionParameters), but differeing in source of RP. One of the sources will be mine, another could be exponential, and a third maybe Botteril and McMillan's parameters?
+
+
+![image](https://github.com/jcsias/jcsias.github.io/assets/149276387/5bc4d009-3c06-453f-921f-242e662de66c)
+
+
+
+
 
 cb 1
 cites Gnann et al 2021
