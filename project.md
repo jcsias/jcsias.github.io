@@ -19,20 +19,45 @@ The main outcomes of this proposed work are expected to be as follows.
 1.	The comparison of the global minimum cost function values provides a basis for judging which method for estimating beta is likely to lead to more success in a hydrologic model parameter regionalization scheme.
    
 2.	The results of this project will provide a preliminary assessment of whether a machine learning approach can replace my subjective procedure for estimating beta.
-3.	
+
 References.
 
 Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology for large-sample studies." Hydrology and Earth System Sciences 21.10 (2017): 5293-5313.
 
 Botterill, T. E., & McMillan, H. K. (2023). Using machine learning to identify hydrologic signatures with an encoder–decoder framework. Water Resources Research, 59, e2022WR033091. https://doi. org/10.1029/2022WR033091
 
+Wittenberg...
+
+
 ## Data
 
 Here is an overview of the dataset, how it was obtained and the preprocessing steps taken, with some plots!
 
-![](assets/IMG/datapenguin.png){: width="500" }
+CAMELS data is needed to run the analysis script created for this project.  For each CAMELS watershed, Botterill and McMillan supplied a variety of hydrologic signatures, as well as their recession parameters. I denote their parameters b_bm, a_bm, k_bm, and t0_bm.  I have only two parameters: b_js, and a_js. These latter two parameters correspond to b_bm and a_bm, respectively.  The units for my a are different from the units for a_bm. Nevertheless, both are expressed in terms of specific discharge, so the correlation should not depend on the difference in units.  The units of the a_* depend on b_*, the flow units of discharge used in the estimation of a*_*, and the time-increment of the discharge data used to estimate a_* and b_*.  The exponent of b_* is not sensitive to time increment and units of discharge, so these are directly comparable.  The b_value is related to concavity of the recession model. b is the exponent of the recession slope power law, and a is the coefficient. a_ and b_ are mutually dependent.  Potentially a range of b_values can provide a good fit to streamflow data, since the a_value can be tuned for each b_value fitted to the data (see Wittenberg...)
+URLs for specific files uploaded by the script:
 
-*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
+1. https://gdex.ucar.edu/dataset/camels/file/camels_clim.txt
+   
+2. https://gdex.ucar.edu/dataset/camels/file/camels_topo.txt
+   
+3. https://gdex.ucar.edu/dataset/camels/file/camels_geol.txt
+
+4. https://github.com/mcmillanhk/HydroML/blob/master/data/extra_sigs/gw_array.csv
+
+
+Data Availability Statement
+ https://github.com/
+mcmillanhk/HydroML and archived at https://doi.org/10.5281/zenodo.6712302 (Botterill & McMillan, 2022).
+
+
+**
+
+Here is the data file I created for this project
+
+I found 28 gages in CAMELS that I have already calibrated.  I have calibrated 34 additional gages in CAMELS. Currently my sample size is 62.  Potentially there are 18 more gages (two of which I deemed unsuitable)  gages that I can add that meet my selection criteria..
+
+Selection Criteria:  gage in 'WA OR ID MT' and 1950 GAGESII (PRISM) pcp >250 mm
+
 
 ## Modelling
 
