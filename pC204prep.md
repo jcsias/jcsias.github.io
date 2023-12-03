@@ -6,6 +6,14 @@ good search terms:
 
 "machine learning hydrologic signatures"
 
+CAMELS data is needed to run the analysis script created for this project.
+Location of files: https://gdex.ucar.edu/dataset/camels/file.html
+URLs for specific files uploaded by the script:
+1. https://gdex.ucar.edu/dataset/camels/file/camels_clim.txt
+2. https://gdex.ucar.edu/dataset/camels/file/camels_topo.txt
+3. https://gdex.ucar.edu/dataset/camels/file/camels_geol.txt
+
+Here is the data file I created for this project
 
 my working file folders
 
