@@ -6,17 +6,18 @@ good search terms:
 
 "machine learning hydrologic signatures"
 
+
 my working file folders
 
 1. desk C:\Hydrology\DataResources\CAMELS\
    
 2. desk C:\Hydrology\DataResources\CAMELS\BotterillMcMillan2021
 
-I found 27 gages in CAMELS that I have already calibrated.  I want at least 50.
+I found 27 gages in CAMELS that I have already calibrated.  I have calibrated 35 additional gages in CAMELS.  Potentially there are 18 more gages (two of which I deemed unsuitable)  gages that I can add that meet my selection criteria..
 
-Selection Criteria:  gage in 'WA OR ID MT' and max elev>2000 and 1950 GAGESII (PRISM) pcp >250 mm
+Selection Criteria:  gage in 'WA OR ID MT' and 1950 GAGESII (PRISM) pcp >250 mm
 
-Here are 28 gages in CAMELS that are in CAMELS, meet the selectin criteria, but that I have not yet calibrated.
+Here are 28 gages in CAMELS that are in CAMELS, meet the selection criteria, but that I have not yet calibrated.
 
 After previewing, and removing two that are glacial meltwater contaminated (Hoh, Thunder Creek),I have 26 candidates. I can add more if necessary and time permits:
 
@@ -170,6 +171,8 @@ Figure above from the Sing et al paper.  Maybe I can train RF to estimate recess
 ###===================================================================
 
 ###Addor, Nans, et al. "The CAMELS data set: catchment attributes and meteorology for large-sample studies." Hydrology and Earth System Sciences 21.10 (2017): 5293-5313. cb>400  https://hess.copernicus.org/articles/21/5293/2017/hess-21-5293-2017.pdf
+
+https://gdex.ucar.edu/dataset/camels/file.html
 
 Addor et al 2017=Extension of CAMELS from N15: Newman et al. (2015b).
 N=671 minimally impacted by human activities 
